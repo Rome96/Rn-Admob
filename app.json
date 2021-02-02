@@ -17,15 +17,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.admobrn.admobrn",
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8273327659294554~6263430919"
+      }
     },
     "android": {
+      "package": "com.admobrn.admobrn",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-3940256099942544~3347511713"
+        "googleMobileAdsAppId": "ca-app-pub-8273327659294554~9225434939"
       }
     },
     "web": {

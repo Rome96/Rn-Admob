@@ -18,7 +18,8 @@ export default function App() {
 
 
   const interstitalAd = async () => {
-    await AdMobInterstitial.setAdUnitID("ca-app-pub-3940256099942544/1033173712");
+    await setTestDeviceIDAsync('EMULATOR');
+    await AdMobInterstitial.setAdUnitID("ca-app-pub-3940256099942544/4411468910");
     await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
     await AdMobInterstitial.showAdAsync();
   }
@@ -30,16 +31,16 @@ export default function App() {
 
       <AdMobBanner
         bannerSize="fullBanner"
-        adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+        adUnitID="ca-app-pub-3940256099942544/2934735716" // Test ID, Replace with your-admob-unit-id
         servePersonalizedAds // true or false
         setTestDeviceIDAsync
-        // onDidFailToReceiveAdWithError={this.bannerError}
+        onDidFailToReceiveAdWithError={err => console.log('ERROR DEL BANNER =>', err)}
       />
 
       {/* <PublisherBanner
         bannerSize="fullBanner"
         servePersonalizedAds
-        adUnitID="ca-app-pub-8273327659294554/9641202057" // Test ID, Replace with your-admob-unit-id
+        adUnitID="ca-app-pub-3940256099942544/2934735716" // Test ID, Replace with your-admob-unit-id
         onDidFailToReceiveAdWithError={(err) => console.log(err)}
         onAdMobDispatchAppEvent={(data) => console.log(`dataaaa ${data}`)}
       /> */}
