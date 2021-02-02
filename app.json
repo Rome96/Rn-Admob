@@ -17,13 +17,15 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.admobrn.admobrn",
+      "buildNumber": "1.0.0",
       "supportsTablet": true,
+      "bundleIdentifier": "com.admobrn.admobrn",
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-8273327659294554~6263430919"
       }
     },
     "android": {
+      "versionCode": 1,
       "package": "com.admobrn.admobrn",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
