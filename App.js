@@ -19,7 +19,7 @@ export default function App() {
 
   const interstitalAd = async () => {
     await setTestDeviceIDAsync('EMULATOR');
-    await AdMobInterstitial.setAdUnitID("ca-app-pub-8273327659294554/9641202057");
+    await AdMobInterstitial.setAdUnitID('ca-app-pub-8273327659294554/9641202057');
     await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
     await AdMobInterstitial.showAdAsync();
   }
